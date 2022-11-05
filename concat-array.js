@@ -2,28 +2,10 @@ let array1 = [];
 let array2 = [];
 
 function concat (array1, array2) {
-  let mergedArray = []
+  let mergedArray = [];
   mergedArray = mergedArray.concat(array1, array2);
   return mergedArray;
-
-}  
-
-  
-
-  /*let i = 0;
-  for (i = 0; i > array2.lenght - 1; i++) {
-    array1.push(array2[i]);
-  }
-  return array1;
-
-
-  /*
-  while (i < array2.lenght - 1) {
-    array1.push(array2[i]);
-  }
-  */
-
-
+}
 
 
 console.log(concat([ 1, 2, 3 ], [ 4, 5, 6 ]), "=?", [ 1, 2, 3, 4, 5, 6 ]);
