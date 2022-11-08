@@ -22,8 +22,8 @@ const sumLargestNumbers = function(data) {
   return sumMax;
 }
 
-
 console.log(sumLargestNumbers([1, 10]));
 console.log(sumLargestNumbers([1, 2, 3]));
 console.log(sumLargestNumbers([10, 4, 34, 6, 92, 2]));
 
+//https://gist.github.com/eegyudt/f33073f1fcfe47fd9f1a3ad4241ae7cf
