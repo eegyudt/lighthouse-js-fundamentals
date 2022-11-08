@@ -1,42 +1,28 @@
+//Kata 4 - Instructors Names
+
 const instructorWithLongestName = function(instructors) {
   counter = 0;
-  let longest = {};
-  let i = 0;
-  for (i = 0; 1 < instructorWithLongestName.length; i++) {
-    if (instructorWithLongestName[i][nameI].length > counter) {
-      longest = {instructorWithLongestName[i]};
-      counter = instructorWithLongestName[i][nameI].length;
-    }
+  let longest;
+  let nameLength = 0;
+  for (let val of instructors) {
+    if (val.name.length > nameLength){
+      longest = val;
+      nameLength = val.name.length;
+    }  
   }
   return longest;
 };
 
 console.log(instructorWithLongestName([
-  {nameI: "Samuel", course: "iOS"},
-  {nameI: "Jeremiah", course: "Web"},
-  {nameI: "Ophilia", course: "Web"},
-  {nameI: "Donald", course: "Web"}
+  {name: "Samuel", course: "iOS"},
+  {name: "Jeremiah", course: "Web"},
+  {name: "Ophilia", course: "Web"},
+  {name: "Donald", course: "Web"}
 ]));
 console.log(instructorWithLongestName([
-  {nameI: "Matthew", course: "Web"},
-  {nameI: "David", course: "iOS"},
-  {nameI: "Domascus", course: "Web"}
+  {name: "Matthew", course: "Web"},
+  {name: "David", course: "iOS"},
+  {name: "Domascus", course: "Web"}
 ]));
 
-
-/*
-
-function judgeVegetable(vegetables, metric) {
-  let maxMetric = 0;
-  let bestGardener = ""
-  let i = 0;
-  for (i = 0; i < vegetables.length; i++) {
-    if (vegetables[i][metric] >= maxMetric) {
-      maxMetric = vegetables[i][metric]
-      bestGardener = vegetables[i][submitter];
-    }
-  }
-  return bestGardener;
-}
-
-*/
+https://gist.github.com/eegyudt/b34ba35e7a2f73c04b4135f974ba2802
